@@ -5,7 +5,7 @@
 
 由于我的csdn博客和liuchuo.net博客上有一些代码并不对应，所以写了一个爬虫查找所有不对应的博客文章并输出markdown表格。
 
-#####主要功能：
+##### 主要功能：
 
 1. 爬取csdn上所有PAT甲级的文章，并将结果返回在item_list
 
@@ -19,7 +19,7 @@
 
    （乙级同理，只需将代码中的关键词“甲级”改为“乙级”）
 
-#####文件解释：
+##### 文件解释：
 
 spider_main.py：爬虫总调度程序
 
@@ -29,13 +29,13 @@ output.md：输出的markdown格式的表格文件
 
 
 
-###spider
+### spider
 
 ##### 主要功能：
 
 从文章中的某一个页面，爬取其页面的a标签，用正则匹配将所有爬取的页面中符合http://www.liuchuo.net/articles/  形式的链接提取为待爬取的URL，将文章页面的标题h1标签和时间time标签分别存储在data字典的title和time中，将url、title和time以表格形式输出到html页面
 
-#####文件解释：
+##### 文件解释：
 
 spider_main：爬虫总调度程序
 
